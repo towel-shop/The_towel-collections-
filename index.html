@@ -11,20 +11,42 @@
             padding: 20px;
             background-color: #f2f2f2;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .product-details {
-            background: white;
+        .product-card {
+            border: 1px solid #ccc;
             padding: 20px;
+            width: 300px;
+            text-align: center;
             border-radius: 10px;
-            display: inline-block;
-            text-align: left;
-            max-width: 500px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            background: white;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .price-old {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .price-new {
+            font-weight: bold;
+            color: #003366;
+            font-size: 18px;
+        }
+        .add-to-cart-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
         }
         .whatsapp-button {
             display: inline-block;
@@ -42,13 +64,14 @@
 
     <h1>میری پروڈکٹ</h1>
 
-    <!-- صحیح تصویر کا نام لگایا گیا ہے -->
-    <img src="IMG_20250419_223251.jpg" alt="پروڈکٹ کی تصویر">
-
-    <div class="product-details">
-        <h2>پروڈکٹ کا نام: عمدہ تولیہ</h2>
-        <p>تفصیل: یہ ایک اعلیٰ معیار کا نرم اور پائیدار تولیہ ہے جو روزمرہ کے استعمال کے لئے بہترین ہے۔</p>
-        <p>قیمت: 1200 روپے</p>
+    <div class="product-card">
+        <img src="IMG-20250424-WA0015.jpg" alt="Luxury Towel">
+        <h2>Luxury Bath Towel</h2>
+        <p>
+            <span class="price-old">Rs 3000</span> 
+            <span class="price-new">Rs 2499</span>
+        </p>
+        <button class="add-to-cart-button">Add to Cart</button>
     </div>
 
     <a class="whatsapp-button" href="https://wa.me/923329227667" target="_blank">
